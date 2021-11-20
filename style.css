@@ -2,7 +2,7 @@
 
 :root {
   --MainFont: 'Roboto';
-  --primary-color: rgb(181, 205, 219);
+  --primary-color: rgb(186, 229, 253);
   --secondary-color: rgb(31, 30, 30);
 
   --ShapeColorLight: #53b7f3;
@@ -76,16 +76,11 @@ body {
   height: 100vh;
 }
 
-/* #About-Section {
-  background-image: linear-gradient(180deg, #53b6f35b, var(--primary-color));
-} */
-
 .HomeDiv {
   position: relative;
   top: 40%;
   font-size: 3rem;
   text-align: center;
-
   text-shadow: var(--HomeTextShadow);
 }
 
@@ -109,8 +104,10 @@ body {
 
 .AboutDiv p {
   line-height: 35px;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: justify;
+  text-justify: inner-word;
 }
 
 .AboutDiv span {
@@ -152,6 +149,16 @@ body {
   }
 }
 
+.skills-div li {
+  cursor: pointer;
+}
+
+.skills-div li:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
 .skills-div h2 {
   font-size: 3rem;
   color: var(--ShapeColorLight);
@@ -186,7 +193,8 @@ body {
   outline-offset: 0em;
   color: var(--secondary-color);
   border-radius: 5%;
-  margin-left: 2em;
+  margin-top: 20px;
+  margin-left: 1em;
   padding: 10px 5px;
 }
 
@@ -434,7 +442,7 @@ body {
   .nav-links {
     position: absolute;
     right: 0px;
-    top: 8vh;
+    top: 11vh;
     height: 92vh;
     background-color: var(--primary-color);
     width: 30%;
@@ -451,10 +459,44 @@ body {
     display: block;
     cursor: pointer;
   }
-}
 
-.nav-active {
-  transform: translateX(0%);
+  .sendInfo {
+    display: flex;
+    width: 400%;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .formDiv input,
+  .formDiv textarea {
+    position: relative;
+    right: 200px;
+    width: 400%;
+    font-size: 1.6rem;
+    margin: 0.3em 0;
+    padding: 0.3em;
+  }
+
+  #Contact-section .ContactDiv h1 {
+    font-size: 3.5rem;
+  }
+
+  #Contact-section .ContactDiv h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .fas,
+  .fab {
+    transform: scale(2);
+    margin-right: 5em;
+  }
+
+  .fas:hover,
+  .fab:hover {
+    transform: scale(3);
+  }
 }
 
 @keyframes navLinkFade {
@@ -517,10 +559,15 @@ body {
   bottom: 0;
   width: 100%;
   display: flex;
-  background-color: #f44336;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 25px 0px;
   justify-content: space-evenly;
+  font-size: 1.4rem;
+}
+
+.footer-section span {
+  color: #ff8b1d;
 }
 
 .bottomShapeDark {
@@ -558,7 +605,7 @@ body {
   position: relative;
   display: block;
   width: calc(130% + 1.3px);
-  height: 250px;
+  height: 227px;
   transform: rotateY(180deg);
 }
 
@@ -580,7 +627,7 @@ body {
   position: relative;
   display: block;
   width: calc(130% + 1.3px);
-  height: 303px;
+  height: 227px;
   transform: rotateY(180deg);
 }
 
