@@ -2,17 +2,14 @@
 
 :root {
   --MainFont: 'Roboto';
-  --primary-color: rgb(186, 229, 253);
+  --primary-color: rgb(210 216 255);
   --secondary-color: rgb(31, 30, 30);
-
-  --ShapeColorLight: #53b7f3;
+  --ShapeColorLight: rgb(140 154 245);
   --ShapeColorDark: #ff8b1d;
-
-  --HomeTextShadow: 0.025em 0.025em 0.025em #53b7f3;
+  --HomeTextShadow: 0.025em 0.025em 0.025em rgb(210 216 255);
   --IconTextShadow: 0.025em 0.025em 0.025em #345d94;
-
-  --SectionHeaderTextShadow: 0.025em 0.025em 0 #53b7f3, 0.025em 0.025em 0 white,
-    0.025em 0.025em 0 #ff8bd1, 0.025em 0.025em 0 black;
+  --SectionHeaderTextShadow: 0.025em 0.025em 0 rgb(210 216 255),
+    0.025em 0.025em 0 white, 0.025em 0.025em 0 #ff8bd1, 0.025em 0.025em 0 black;
 }
 
 html {
@@ -632,7 +629,7 @@ body {
 }
 
 .bottomShape .shape-fill {
-  fill: #53b7f3;
+  fill: rgb(140 154 245);
 }
 
 .topShape {
@@ -653,5 +650,5 @@ body {
 }
 
 .topShape .shape-fill {
-  fill: #53b7f380;
+  fill: rgb(140 154 245 / 50%);
 }
