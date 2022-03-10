@@ -238,12 +238,12 @@ body {
 .project-grid {
   display: grid;
   position: relative;
-  margin: 0;
+  margin: 0 5rem;
   padding: 0;
   margin-bottom: 200px;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 3.5rem;
-  grid-row-gap: 5rem;
+  grid-gap: 8.5rem;
+  grid-row-gap: 10rem;
   z-index: 2;
 }
 
@@ -252,14 +252,33 @@ body {
   padding: 10rem 5rem;
   font-size: 1.7rem;
   color: var(--primary-color);
+  filter: drop-shadow(0px 0px 20px black);
 }
 
 .project-name {
   text-align: center;
-  text-shadow: var(--icon-text-shadow);
-  font-size: 2rem;
+  line-height: 50px;
+  font-size: 2.5rem;
+  font-weight: 300;
+  background-color: var(--shape-color-light);
   color: var(--secondary-color);
+  text-shadow: 0px 0px 5px var(--primary-color);
+  border-radius: 5px;
+  margin-bottom: 0;
+}
+
+.project-link {
+  filter: drop-shadow(0px 0px 5px var(--shape-color-light));
+  background-color: rgba(255, 255, 255, 0.137);
+  color: var(--secondary-color);
+  border-radius: 5px;
   text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.project-link:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in;
 }
 
 .project-item {
@@ -269,12 +288,8 @@ body {
   background-size: cover;
   background-position: center;
   border: 2px solid var(--secondary-color);
+  transition: all 0.3s;
   border-radius: 5px;
-}
-
-.project-item:hover {
-  transform: scale(1.1);
-  transition: all 0.2s;
 }
 
 .project1 {
