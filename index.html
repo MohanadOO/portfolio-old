@@ -1,11 +1,16 @@
 <html>
 <head>
-  <title>Personal Portfolio</title>
+  <title>Mohanad Alrwaihy Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180"  class="light-scheme-icon" href="./images/favicon_io(Light)//apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" class="light-scheme-icon" href="./images/favicon_io(Light)//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"  class="light-scheme-icon" href="./images/favicon_io(Light)//favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
   <script src="https://kit.fontawesome.com/b853db0003.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src= "script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
     <script src = "typing.js" defer></script>
   </head>
   <body>
@@ -98,13 +103,7 @@
             Drum Machine
           </h4>
           </a>
-          <!-- <a href="https://codepen.io/mohanadoo/full/xxrGqxW" target="_blank" class = "project-link">
-          <div class ="project-item project6">
-          </div>
-          <h4 class="project-name">
-            Calculator
-          </h4>
-          </a> -->
+  
         </ul>
         <div class="bottom-shape">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -131,21 +130,21 @@
           <h1> Let's work together... </h1>
           <h2> You can contact me here 👇 </h2>
           <ul class = "social-media">
-            <a href = "https://github.com/MohanadOO/MohanadOO"target ="_blank"><i class="fab fa-github"></i> </a>
+            <a href = "https://github.com/MohanadOO"target ="_blank"><i class="fab fa-github"></i> </a>
             <a href = "https://www.linkedin.com/in/mohanad-alrwahiy-176aa719b/"target ="_blank"> <i class="fab fa-linkedin-in"></i></a>
-            <a href = "#" target ="_blank"> <i class= "fab fa-whatsapp"></i></a>
-            <a href = "moohand.alrwaihy@gmail.com" target ="_blank"><i class="fas fa-envelope-open"></i></a> 
+            <a href="https://wa.me/966532407160" target="_blank"><i class= "fab fa-whatsapp"></i></a>
+            <a href = "mailto:moohand.alrwaihy@gmail.com" target ="_blank"><i class="fas fa-envelope-open"></i></a> 
           </ul>
         </div>
 
           <div class="form-div">
-            <form id="form" autocomplete="off">
+            <form id="form" autocomplete="off" onsubmit="sendEmail(); return false;">
               <div class="send-info">
-                <input type="name" name = "name" placeholder="Name">
-                <input type="email" name = "email" placeholder="Email">
+                <input type="name" id="name" name = "name" placeholder="Your Name" required>
+                <input type="email" id="email" name = "email" placeholder="Email" required>
               </div>
-              <input type="text" name="subject" placeholder="Subject">
-              <textarea name="msg" id="msg" placeholder="Message" ></textarea>
+              <input type="text" id="subject" name="subject" placeholder="Subject" required> 
+              <textarea name="msg" id="message" placeholder="Message" required ></textarea>
               <input type="submit" name="submit" Value = "Submit" id="submit">
             </form>
           </div>
@@ -153,7 +152,7 @@
         
         <footer class = "footer-section">
           <div class="left-text">Made with care by <span>Mohanad</span> </div>
-          <div class="right-text">2021</div>
+          <div class="right-text">2022</div>
         </footer>
   </section>
 
