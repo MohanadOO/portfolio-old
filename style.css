@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap');
 
 :root {
   --main-font: 'Roboto';
+  --arabic-font: 'Cairo';
   --page-background: linear-gradient(
     180deg,
     #d2d8ff,
@@ -77,6 +80,11 @@ body {
   transition: color 0.7s ease-out;
   position: relative;
   overflow: hidden;
+}
+
+:lang(ar) {
+  font-family: var(--arabic-font), 'Al Bayan', serif;
+  letter-spacing: normal;
 }
 
 #home-section {
@@ -175,6 +183,20 @@ body {
   height: 100%;
   border-right: 1px solid var(--secondary-color);
   animation: blink 0.4s infinite ease;
+}
+
+.typing:lang(ar)::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  width: 4px;
+  height: 100%;
+  border-right: 1px solid var(--secondary-color);
+  animation: blink 0.4s infinite ease;
+}
+
+.typing:lang(ar)::after {
+  display: none;
 }
 
 @keyframes blink {
@@ -344,6 +366,17 @@ body {
   margin-right: 5em;
 }
 
+.fas:lang(ar),
+.fab:lang(ar) {
+  position: relative;
+  right: -310px;
+  transform: scale(3);
+
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 0;
+}
+
 .fab,
 .fas {
   color: var(--secondary-color);
@@ -428,10 +461,14 @@ body {
   text-shadow: var(--icon-text-shadow);
 }
 
+.logo-ar {
+  font-family: 'Aref Ruqaa', serif;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 40%;
+  width: 60%;
 }
 
 .theme-icon {
@@ -455,6 +492,16 @@ body {
   color: var(--shape-color-light);
   background: var(--secondary-color);
   border-radius: 5px;
+}
+
+#language-btn {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+#language-btn:hover {
+  background-color: var(--shape-color-light);
+  border-radius: 0;
 }
 
 .mobile-container div {
@@ -499,6 +546,14 @@ body {
     border-radius: 20px;
   }
 
+  .nav-links:lang(ar) {
+    width: 40%;
+    top: 12.5vh;
+    left: 0px;
+    right: auto;
+    transform: translateX(-100%);
+  }
+
   .nav-links li {
     opacity: 0;
   }
@@ -509,6 +564,10 @@ body {
   }
 
   .nav-active {
+    transform: translateX(0%);
+  }
+
+  .nav-active:lang(ar) {
     transform: translateX(0%);
   }
 
@@ -543,6 +602,11 @@ body {
   .social-media {
     padding: 10px 0;
     transform: translateX(180px);
+  }
+
+  .social-media:lang(ar) {
+    padding: 10px 0;
+    transform: translateX(-180px);
   }
 
   .send-info {
@@ -634,6 +698,10 @@ body {
 .footer-section span {
   font-family: cursive;
   color: #ff8b1d;
+}
+
+.footer-section span:lang(ar) {
+  font-family: var(--arabic-font), 'Al Bayan', serif;
 }
 
 .bottom-shapeDark {
