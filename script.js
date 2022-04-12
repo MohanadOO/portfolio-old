@@ -1,3 +1,4 @@
+//Mobile Container Function
 const navSlide = () => {
   const burger = document.querySelector('.mobile-container')
   const nav = document.querySelector('.nav-links')
@@ -20,3 +21,14 @@ const navSlide = () => {
   })
 }
 navSlide()
+
+//Form Function
+function sendEmail() {
+  Email.send({
+    SecureToken: 'c12d23ac-1eb7-4880-8808-cc73580ecdc4',
+    To: 'mohanad.alrwaihy@gmail.com',
+    From: document.getElementById('email').value,
+    Subject: document.getElementById('subject').value,
+    Body: document.getElementById('message').value,
+  }).then((message) => alert(message))
+}
