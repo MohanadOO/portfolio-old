@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 :root {
   --main-font: 'Roboto';
@@ -365,6 +366,7 @@ body {
 
 .send-info {
   display: flex;
+  gap: 7px;
 }
 
 .form-div input,
@@ -376,7 +378,16 @@ body {
   padding: 0.3em 0.6em;
   border-radius: 5px;
   background-color: var(--secondary-color);
-  color: var(--primary-color);
+  color: var(--shape-color-light);
+}
+
+::placeholder {
+  color: var(--shape-color-light);
+  opacity: 0.8;
+}
+
+:-ms-input-placeholder {
+  color: var(--shape-color-light);
 }
 
 .form-div textarea {
@@ -385,7 +396,8 @@ body {
 
 .form-div input:hover,
 .form-div textarea:hover {
-  outline: 3px groove var(--shape-color-light);
+  outline: 5px solid var(--shape-color-light);
+  transition: all 0.2s ease-in;
 }
 
 #submit {
@@ -409,6 +421,7 @@ body {
 }
 
 .logo {
+  font-family: Marck Script, cursive;
   color: var(--secondary-color);
   letter-spacing: 5px;
   font-size: 2.2rem;
@@ -535,6 +548,10 @@ body {
   .send-info {
     flex-direction: column;
   }
+
+  #form {
+    width: 75vw;
+  }
 }
 
 @media (max-width: 450px) {
@@ -615,7 +632,8 @@ body {
 }
 
 .footer-section span {
-  color: var(--shape-color-dark);
+  font-family: cursive;
+  color: #ff8b1d;
 }
 
 .bottom-shapeDark {
