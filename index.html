@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <title>Mohanad Alrwaihy Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="This is Mohanad Alrwaihy Portfolio - Personal Web Site">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   <link rel="apple-touch-icon" sizes="180x180"  class="light-scheme-icon" href="./images/favicon_io(Light)//apple-touch-icon.png">
@@ -26,7 +29,7 @@
         <a href = "#contact-section" class="nav4">Contact </a>
         <a href = "https://www.cakeresume.com/s--xFe5zn7_6pbOn71eYKrAOw--/mohanad-alrwaihy" target="_blank" class="nav5"><span>Resume</span></a>
         <a href="./indexAR.html" class="nav6" id="language-btn"><span lang="ar">عربي</span></a>
-        <img src="./images/night.png" alt="" class="theme-icon" title = "Dark Theme">
+        <img src="./images/night.webp" alt="" class="theme-icon" title = "Dark Theme">
       </ul>
 
       <div class="mobile-container">
@@ -159,32 +162,6 @@
         </footer>
   </section>
 
-
-    <script>
-      var icon = document.getElementsByClassName("theme-icon")[0];
-      var bottomShape = document.getElementsByClassName("bottom-shape")[0];
-      var topShape = document.getElementsByClassName("top-shape")[0];    
-      icon.onclick = function(){
-      document.body.classList.toggle("dark-theme");
-      if(document.body.classList.contains("dark-theme")){
-        icon.src = "./images/sun.png"
-        icon.title = "Light Theme"
-
-        bottomShape.classList = "bottom-shapeDark";
-        topShape.classList = "top-shapeDark";
-
-        }
-        else {
-          icon.src = "./images/night.png"
-          icon.title = "Dark Theme"
-
-          bottomShape.classList = "bottom-shape";
-          topShape.classList = "top-shape";
-        }
-      }
-    </script>
-
-  
   </main>
 </body>
 </html>
