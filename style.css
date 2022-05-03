@@ -209,7 +209,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 70px;
   margin-bottom: 200px;
 }
 
@@ -217,8 +216,8 @@ section {
   display: flex;
   flex-direction: column;
   padding-inline: 30px;
-  width: 500px;
-  height: 400px;
+  width: 650px;
+  height: 350px;
   filter: drop-shadow(0px 0px 5px var(--shape-color-light));
   background-color: var(--shape-color-light);
   color: var(--secondary-color);
@@ -227,22 +226,22 @@ section {
   transition: all 0.3s ease-out;
   z-index: 1;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
 }
 
 .skills-title {
-  margin-inline: auto;
-  margin-bottom: 50px;
+  color: #ff8b1d;
+  font-family: Marck Script, cursive;
+  margin: 30px auto;
+}
+
+.skills-title:lang(ar) {
+  font-family: 'Aref Ruqaa', serif;
 }
 
 .skills-list-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-  gap: 50px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  justify-content: space-around;
 }
 
 .skills-list {
@@ -252,6 +251,7 @@ section {
   padding: 0;
   gap: 30px;
   padding: 0px 30px;
+  margin-top: 20px;
 }
 
 .skill {
@@ -259,11 +259,70 @@ section {
   align-items: center;
   gap: 10px;
   font-size: 2rem;
-  letter-spacing: 1.4;
+}
+
+.skill:hover {
+  cursor: pointer;
+}
+
+.skill span {
+  font-size: 1.7rem;
+  letter-spacing: 1.4px;
+}
+
+.skill-level {
+  padding: 0.4rem 0.8rem;
+  background-color: #ff8b1d;
+  color: var(--shape-color-light);
+  border-radius: 4px;
 }
 
 .skill-check-icon {
-  fill: blueviolet;
+  fill: #ff8b1d;
+}
+
+@media (max-width: 770px) {
+  .skills-card {
+    width: 450px;
+  }
+
+  .skills-card:first-of-type {
+    height: 490px;
+  }
+
+  .skills-title {
+    margin: 20px auto;
+  }
+
+  .skills-list-container {
+    flex-wrap: wrap;
+  }
+
+  .skills-list {
+    margin-top: 35px;
+  }
+
+  .skill {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills-card {
+    margin-inline: 120px;
+  }
+
+  .skill {
+    gap: 10px;
+  }
+
+  .skill span {
+    font-size: 1.4rem;
+  }
+
+  .skill-check-icon {
+    width: 15px;
+  }
 }
 
 .project-grid {
