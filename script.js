@@ -22,6 +22,27 @@ const navSlide = () => {
 }
 navSlide()
 
+//Theme Toggle Function.
+var icon = document.getElementsByClassName('theme-icon')[0]
+var bottomShape = document.getElementsByClassName('bottom-shape')[0]
+var topShape = document.getElementsByClassName('top-shape')[0]
+icon.onclick = function () {
+  document.body.classList.toggle('dark-theme')
+  if (document.body.classList.contains('dark-theme')) {
+    icon.src = './images/sun.webp'
+    icon.title = 'Light Theme'
+
+    bottomShape.classList = 'bottom-shapeDark'
+    topShape.classList = 'top-shapeDark'
+  } else {
+    icon.src = './images/night.webp'
+    icon.title = 'Dark Theme'
+
+    bottomShape.classList = 'bottom-shape'
+    topShape.classList = 'top-shape'
+  }
+}
+
 //Form Function
 function sendEmail() {
   Email.send({
