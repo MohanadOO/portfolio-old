@@ -278,6 +278,11 @@ section {
   margin-left: auto;
 }
 
+.skill-level:lang(ar) {
+  margin-left: 0;
+  margin-right: auto;
+}
+
 .skill-check-icon {
   fill: #ff8b1d;
 }
