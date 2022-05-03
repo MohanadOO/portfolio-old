@@ -275,6 +275,7 @@ section {
   background-color: #ff8b1d;
   color: var(--shape-color-light);
   border-radius: 4px;
+  margin-left: auto;
 }
 
 .skill-check-icon {
