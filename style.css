@@ -7,7 +7,7 @@
   --main-font: 'Roboto';
   --arabic-font: 'Cairo';
   --page-background: linear-gradient(
-    180deg,
+    120deg,
     #d2d8ff,
     #fcd1ff,
     #ffc8e8,
@@ -15,7 +15,7 @@
     #ffdc87,
     #f9f871
   );
-  --primary-color: #fc97a0;
+  --primary-color: #e44896;
   --secondary-color: black;
   --shape-color-light: #e6f4f1;
   --shape-color-dark: #ff8b1d;
@@ -162,6 +162,10 @@ section {
   .about-div p {
     line-height: 25px;
     font-size: 1.5rem;
+  }
+
+  .about-div {
+    margin-inline: 2em;
   }
 }
 
@@ -328,6 +332,14 @@ section {
 
   .skill-check-icon {
     width: 15px;
+  }
+
+  .skills-card:first-of-type {
+    height: 430px;
+  }
+
+  .skills-card {
+    height: 310px;
   }
 }
 
@@ -543,6 +555,8 @@ section {
   justify-content: space-around;
   align-items: center;
   width: 60%;
+  padding: 0;
+  margin-block: 1em;
 }
 
 .theme-icon {
@@ -609,20 +623,20 @@ section {
   .nav-links {
     position: absolute;
     right: 0px;
-    top: 10.5vh;
+    top: 100%;
     height: 80vh;
     background-color: var(--shape-color-light);
-    width: 40%;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    border-radius: 20px;
+    border-radius: 5px;
   }
 
   .nav-links:lang(ar) {
-    width: 40%;
-    top: 12.5vh;
+    width: 50%;
+    top: 100%;
     left: 0px;
     right: auto;
     transform: translateX(-100%);
